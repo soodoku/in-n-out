@@ -9,7 +9,7 @@
 setwd(githubdir)
 
 # Get data
-data <- read.csv("in-n-out/data/yg/yg_exp.csv")
+data <- read.csv("in-n-out/data/yg_exp.csv")
 
 # Party ID
 data$pid2 <- car::recode(data$pid7, "c('Strong Democrat', 'Lean Democrat', 'Not very strong Democrat') = 'Democrat'; c('Strong Republican', 'Lean Republican', 'Not very strong Republican') = 'Republican'")
